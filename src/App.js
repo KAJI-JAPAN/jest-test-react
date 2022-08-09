@@ -1,17 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import Power from './Power';
 
 function App() {
-  return(
-    <>
-    <h1>Hello</h1>
-    <ul>
-        <li>React</li>
-        <li>Vue</li>
-        <li>Svelte</li>
-    </ul>
-    </>
-  ) 
+  return <Power name="電源" />
 }
 
 export default App;
