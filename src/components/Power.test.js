@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
 import Power from "../Power"
 
 it('renders Power Components', () => {
@@ -22,6 +23,6 @@ it('on button enable', () => {
 it('change from off to on', () => {
   render(<Power />)
   const onButtonElement = screen.getByRole('button', {name: 'ON'});
-  fireEvent.click(onButtonElement);
+  userEvent.click(onButtonElement);
   expect(onButtonElement).toBeDisabled()
 })

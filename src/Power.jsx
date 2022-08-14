@@ -11,10 +11,15 @@ function Power({ name }) {
       <button
         onClick={() => setPower(true)}
         disabled={power ? true : false}
+        onPointDown={() => console.log('PointerDown Event')}
       >
         ON
       </button>
-      <button onClick={() => setPower(false)} disabled={!power ? true : false}>
+      <button
+        onClick={() => setPower(false)}
+        disabled={!power ? true : false}
+        onPointDown={() => console.log('PointerDown Event')}
+      >
         OFF
       </button>
     </div>
